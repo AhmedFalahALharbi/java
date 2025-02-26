@@ -15,9 +15,9 @@ public class OrderManager {
     private void processOrder(Order order) {
         executor.execute(() -> {
             try {
-                Thread.sleep(2000); 
+                Thread.sleep(2500); 
                 order.setOrderStatus(OrderStatus.SHIPPED);
-                Thread.sleep(2000);
+                Thread.sleep(2500);
                 order.setOrderStatus(OrderStatus.DELIVERED);
             } catch (InterruptedException e) {
                 e.printStackTrace();

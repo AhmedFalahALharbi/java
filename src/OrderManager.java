@@ -15,7 +15,7 @@ public class OrderManager {
     private void processOrder(Order order) {
         executor.execute(() -> {
             try {
-                Thread.sleep(2000); // Simulating processing time
+                Thread.sleep(2000); 
                 order.setOrderStatus(OrderStatus.SHIPPED);
                 Thread.sleep(2000);
                 order.setOrderStatus(OrderStatus.DELIVERED);

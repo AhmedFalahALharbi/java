@@ -1,6 +1,6 @@
 public class StockPredictor {
     public static int daysUntilStockRunsOut(Product product, int avgDailySales) {
-        if (avgDailySales == 0) return Integer.MAX_VALUE; // Avoid division by zero
+        if (avgDailySales == 0) return Integer.MAX_VALUE; 
         return product.getStockLevel() / avgDailySales;
     }
 
